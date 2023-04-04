@@ -1,5 +1,5 @@
 return {
-    colorscheme = "catppuccin",
+    colorscheme = "gruvbox-material",
     plugins = {
         {
             "catppuccin/nvim",
@@ -8,13 +8,10 @@ return {
                 require("catppuccin").setup {}
             end,
         },
-        -- {
-        --     "github/copilot.vim",
-        --     lazy = false,
-        -- },
-        --
-
-
+        {
+            "sainnhe/gruvbox-material",
+            as = "gruvbox-material",
+        },
         {
             "zbirenbaum/copilot.lua",
             lazy = false,
@@ -26,7 +23,7 @@ return {
                         auto_trigger = true,
                         debounce = 75,
                         keymap = {
-                            accept = "<tab>",
+                            accept = "<M-l>",
                             accept_word = false,
                             accept_line = false,
                             next = "<M-]>",
