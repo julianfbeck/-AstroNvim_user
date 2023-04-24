@@ -9,6 +9,10 @@ return {
             end,
         },
         {
+            "AstroNvim/astrocommunity",
+            { import = "astrocommunity.motion.harpoon" }
+        },
+        {
             "sainnhe/gruvbox-material",
             as = "gruvbox-material",
         },
